@@ -8,208 +8,44 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-  <style>
-    /* CSS styles for responsiveness */
-    /* Mobile-first styles */
-    /* General styles */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      font-size: 16px;
-      line-height: 1.5;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    /* Homepage */
-    .homepage-card {
-      text-align: center;
-      padding: 20px;
-    }
-
-    .homepage-content {
-      margin-bottom: 20px;
-    }
-
-
-    /* Skills section */
-    .skills-card {
-      text-align: center;
-      padding: 20px;
-    }
-
-    .skill-card {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-
-    .skill-card img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    .skill-content {
-      flex: 1;
-      margin-left: 10px;
-      text-align: left;
-    }
-
-    .rating-stars {
-      display: inline-block;
-      width: 100px;
-      height: 20px;
-      background-color: #eee;
-    }
-
-    .progress-bar {
-      width: 100%;
-      height: 100%;
-      background-color: #ccc;
-    }
-
-    .progress {
-      height: 100%;
-      background-color: #4caf50;
-    }
-
-    /* Education section */
-    .education-card {
-      text-align: center;
-      padding: 20px;
-    }
-
-    .education-card ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    /* Projects section */
-    .projects-card {
-      text-align: center;
-      padding: 20px;
-    }
-
-    .projects-card ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    /* Contact section */
-    .contact-card {
-      text-align: center;
-      padding: 20px;
-    }
-
-    .social-media-icons {
-      margin-top: 20px;
-    }
-
-    .social-media-icons a {
-      display: inline-block;
-      margin-right: 10px;
-      color: #333;
-    }
-
-    /* Parallax section */
-    .parallax-section {
-      background-image: url('background.jpg');
-      background-size: cover;
-      background-position: center;
-      text-align: center;
-      padding: 100px 20px;
-    }
-
-    .parallax-card {
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 20px;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .parallax-video {
-      position: relative;
-      padding-bottom: 56.25%;
-      padding-top: 30px;
-      height: 0;
-      overflow: hidden;
-    }
-
-    .parallax-video video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    /* Bottom navbar */
-    .bottom-navbar {
-      background-color: #333;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .bottom-navbar ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .bottom-navbar li {
-      display: inline-block;
-      margin-right: 10px;
-    }
-
-    .bottom-navbar a {
-      display: block;
-      color: #fff;
-      text-decoration: none;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #f4f4f4;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
 </head>
 
 <body>
-  <section class="homepage homepage-card fade-in">
-    <div class="homepage-content">
-      <h2>Lutho Gift Nyakeni - Portfolio</h2>
-      <h3>An aspiring Software Developer</h3>
-    </div>
-    <div class="profile-image">
-      <img src="profile.jpg" alt="Lutho Nyakeni">
-    </div>
-  </section>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about"> About</a></li>
+      <li><a href="#skills"> Skills</a></li>
+      <li><a href="#education"> Education</a></li>
+      <li><a href="#projects"> Projects</a></li>
+      <li><a href="#contact"> Contact</a></li>
+    </ul>
+  </nav>
+
+<section class="homepage homepage-card fade-in">
+  <div class="profile-image">
+    <img src="profile.jpg" alt="Lutho Nyakeni">
+  </div>
+  <div class="homepage-content">
+    <h2>Lutho Gift Nyakeni - Portfolio</h2>
+    <h3>An aspiring Software Developer</h3>
+  </div>
+</section>
 
   <div class="container">
     <main>
-      <section id="about" class="about-card scale floating gradient-bg">
+      <section id="about" class="about-card card">
         <div class="about-content">
           <h2>About Me</h2>
           <p>I am a dedicated and motivated undergraduate student specializing in Information Systems. With a passion
             for Software Development, I strive for excellence in my academic pursuits and possess a strong work ethic.</p>
-          <a href="myCv.pdf" download class="download-cv">Download CV</a>
+            <a href="myCv.pdf" download class="download-cv">Download CV</a>
         </div>
-        <div class="profile-image">
+        <div class="profileimage">
           <img src="About.JPG" alt="Lutho Nyakeni">
         </div>
       </section>
 
-      <section id="skills" class="skills-card floating gradient-bg">
+      <section id="skills" class="skills-card card">
         <h2>Skills</h2>
         <div class="skill-card">
           <img src="Csharp_Logo.png" alt="Programming Languages Avatar" class="avatar">
@@ -293,13 +129,13 @@
         </div>
       </section>
 
-      <section id="education" class="education-card floating gradient-bg">
+      <section id="education" class="education-card card">
         <h2>Education</h2>
         <ul>
           <li>
             <h3>University of Pretoria</h3>
             <p>Bachelor of Information (BIT) - Information Systems</p>
-            <p>2019 - Present</p>
+            <p>2021 - Present</p>
           </li>
           <li>
             <h3>Zingisa Comprehensive High School<br><i class="fas fa-graduation-cap"></i></h3>
@@ -308,11 +144,19 @@
           </li>
         </ul>
         <div class="transcript-download">
-          <a href="Academic Record.pdf" download class="download-cv">Download CV</a>
+          <a href="Academic Record.pdf" download class="download-cv">Download Transcript</a>
         </div>
       </section>
 
-      <section id="contact" class="contact-card scale floating gradient-bg">
+      <section id="contact" class="contact-card card">
+        <h2>Projects</h2>
+        <a href="https://u21605310.github.io/ecommerce-project/" >Angular App</a>
+        <br>
+        <a href="https://github.com/u21605310/Personal-projects">Github</a>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-card card">
         <h2>Contact</h2>
         <p>Phone: 0648947851</p>
         <p>Email: luthogiftnyakeni@gmail.com</p>
@@ -322,155 +166,65 @@
           <a href="https://github.com/u21605310/Personal-projects" target="_blank">
             <i class="fab fa-github"></i>
           </a>
-          <a href="https://www.instagram.com/lutho_nyakeni/" target="_blank">
-            <i class="fab fa-instagram"></i>
-          </a>
           <a href="https://www.linkedin.com/in/lutho-nyakeni-392b55253/" target="_blank">
             <i class="fab fa-linkedin"></i>
           </a>
         </div>
       </section>
 
-      <section id="projects" class="parallax-section">
-        <div class="parallax-card">
-          <h2>Video to Showcase My ASP.NET WEB API Project</h2>
-          <div class="parallax-video">
-            <video id="project-video" autoplay loop muted>
-              <source src="demoVideo.mkv" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <div class="video-controls">
-              <button id="play-button">Play</button>
-              <button id="rewind-button">Rewind</button>
-              <button id="fast-forward-button">Fast Forward</button>
-              <span id="current-time">00:00</span> / <span id="duration">00:00</span>
-            </div>
-          </div>
-        </div>
+      <section id="projects-card card">
+        
       </section>
     </main>
-
-    <nav class="bottom-navbar">
-      <ul>
-        <li><a href="#about"><i class="fas fa-user fa-3x"></i> About</a></li>
-        <li><a href="#skills"><i class="fas fa-code fa-3x"></i> Skills</a></li>
-        <li><a href="#education"><i class="fas fa-graduation-cap fa-3x"></i> Education</a></li>
-        <li><a href="#projects"><i class="fas fa-folder-open fa-3x"></i> Projects</a></li>
-        <li><a href="#contact"><i class="fas fa-envelope fa-3x"></i> Contact</a></li>
-      </ul>
-    </nav>
-  </div>
 
   <footer>
     <p>&copy; 2023 Lutho Gift Nyakeni. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    // Smooth scrolling for navigation links
+    const navLinks = document.querySelectorAll('.navbar a');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', smoothScroll);
+    });
+
+    function smoothScroll(event) {
+      event.preventDefault();
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      const headerOffset = 80; // Adjust this value to match your header height
+
+      if (targetElement) {
+        const targetPosition = targetElement.getBoundingClientRect().top;
+        const startPosition = window.pageYOffset;
+        const distance = targetPosition - headerOffset;
+        const duration = 800; // Adjust this value to control the scroll speed
+
+        let startTime = null;
+
+        function animation(currentTime) {
+          if (startTime === null) startTime = currentTime;
+          const timeElapsed = currentTime - startTime;
+          const ease = Math.easeInOutQuad(timeElapsed, startPosition, distance, duration);
+          window.scrollTo(0, ease);
+          if (timeElapsed < duration) requestAnimationFrame(animation);
+        }
+
+        // Easing function
+        Math.easeInOutQuad = function (t, b, c, d) {
+          t /= d / 2;
+          if (t < 1) return c / 2 * t * t + b;
+          t--;
+          return -c / 2 * (t * (t - 2) - 1) + b;
+        };
+
+        requestAnimationFrame(animation);
+      }
+    }
+  </script>
+
 </body>
 
 </html>
-
-
-
-<script>
-// JavaScript
-// Get the navbar links
-const navLinks = document.querySelectorAll('nav ul li a');
-
-// Add click event listeners to the navbar links
-navLinks.forEach(link => {
-  link.addEventListener('click', function(event) {
-    // Prevent the default link behavior
-    event.preventDefault();
-
-    // Remove the active class from all links
-    navLinks.forEach(link => {
-      link.classList.remove('active');
-    });
-
-    // Add the active class to the clicked link
-    this.classList.add('active');
-
-    // Get the target section's ID from the href attribute
-    const targetId = this.getAttribute('href');
-
-    // Scroll smoothly to the target section
-    document.querySelector(targetId).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-});
-
-// Add class to elements when they appear in the viewport
-function handleIntersection(entries) {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-    }
-  });
-}
-
-const options = {
-  rootMargin: '0px',
-  threshold: 0.2
-};
-
-const observer = new IntersectionObserver(handleIntersection, options);
-
-const sections = document.querySelectorAll('section');
-
-sections.forEach(section => {
-  observer.observe(section);
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  // Get the video element
-  const video = document.getElementById('project-video');
-
-  // Get the video controls elements
-  const currentTimeElement = document.getElementById('current-time');
-  const durationElement = document.getElementById('duration');
-  const playButton = document.getElementById('play-button');
-  const rewindButton = document.getElementById('rewind-button');
-  const fastForwardButton = document.getElementById('fast-forward-button');
-
-  // Add event listeners for video events
-  video.addEventListener('loadedmetadata', () => {
-    // Display the duration of the video
-    durationElement.textContent = formatTime(video.duration);
-  });
-
-  video.addEventListener('timeupdate', () => {
-    // Update the current time of the video
-    currentTimeElement.textContent = formatTime(video.currentTime);
-  });
-
-  // Helper function to format time in MM:SS format
-  function formatTime(time) {
-    const minutes = Math.floor(time / 60);
-    const seconds = Math.floor(time % 60).toString().padStart(2, '0');
-    return `${minutes}:${seconds}`;
-  }
-
-  // Add event listeners for video controls
-  playButton.addEventListener('click', () => {
-    if (video.paused) {
-      video.play();
-      playButton.textContent = 'Pause';
-    } else {
-      video.pause();
-      playButton.textContent = 'Play';
-    }
-  });
-
-  rewindButton.addEventListener('click', () => {
-    video.currentTime -= 10; // Rewind by 10 seconds
-  });
-
-  fastForwardButton.addEventListener('click', () => {
-    video.currentTime += 10; // Fast forward by 10 seconds
-  });
-});
-
-
-</script>
